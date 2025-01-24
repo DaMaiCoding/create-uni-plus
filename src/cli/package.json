@@ -1,0 +1,19 @@
+{
+  "name": "@uni-plus/create",
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/codercup/create-unibest#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codercup/create-unibest.git"
+  },
+  "bugs": "https://github.com/codercup/create-unibest/issues",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

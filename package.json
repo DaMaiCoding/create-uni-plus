@@ -1,0 +1,42 @@
+{
+  "name": "@uni-plus/create",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "dev": "node ./src/cli/index.cjs"
+  },
+  "type": "module",
+  "keywords": [],
+  "bin": {
+    "uni-plus": "src/cli/outfile.cjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@inquirer/prompts": "^7.2.3",
+    "@types/cli-spinner": "^0.2.3",
+    "@types/ejs": "^3.1.5",
+    "@types/fs-extra": "^11.0.4",
+    "@types/git-clone": "^0.2.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.10.10",
+    "@types/prompts": "^2.4.9",
+    "colorette": "^2.0.20",
+    "commander": "^13.1.0",
+    "consola": "^3.4.0",
+    "ejs": "^3.1.10",
+    "esbuild": "^0.24.2",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "cli-spinner": "^0.2.10",
+    "fs-extra": "^11.3.0",
+    "git-clone": "^0.2.0",
+    "pathe": "^2.0.2"
+  }
+}
