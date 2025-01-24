@@ -2,13 +2,13 @@
 
 import { Command } from 'commander';
 import { select, input } from '@inquirer/prompts';
-import { pathExistsSync, readdirSync, removeSync, existsSync, readJSONSync, readJson, remove, writeJSON } from 'fs-extra'
-import path from 'node:path';
+import { pathExistsSync, readdirSync, removeSync, existsSync, readJson, remove, writeJSON } from 'fs-extra'
 import { join } from 'pathe'
 import { prompt } from 'prompts';
 import { Spinner } from 'cli-spinner'
 import gitClone from 'git-clone/promise'
 import { greenBright } from 'colorette'
+// import { templateList } from './templateList/base/templateData'
 
 const program = new Command();
 const create = async (projectName: string) => {
