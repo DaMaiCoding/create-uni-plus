@@ -1,13 +1,27 @@
-export function getCommand(packageManager: string, scriptName: string, args?: string) {
-  if (scriptName === 'install')
-    return packageManager === 'yarn' ? 'yarn' : `${packageManager} install`
+import { Command } from 'commander';
+import { input } from '@inquirer/prompts';
 
-  if (args) {
-    return packageManager === 'npm'
-      ? `npm run ${scriptName} -- ${args}`
-      : `${packageManager} ${scriptName} ${args}`
+export const getCommand = async () => {
+  const program = new Command();
+  // 获取命令行的参数, 根据参数执行不同的逻辑
+  program
+    .name('uni-plus')
+    .description('脚手架 uni-plus')
+
+  const opts = program.command('create')
+    .description('创建项目')
+    .option('-n, --name <name>', '项目名称')
+    .opts()
+
+  program.parse();
+
+  let projectName = opts.name || ''
+
+  // 如果命令行没有项目名，就输入项目名称
+  while (!projectName) {
+    projectName = await input({ message: '请输入项目名' });
   }
-  else {
-    return packageManager === 'npm' ? `npm run ${scriptName}` : `${packageManager} ${scriptName}`
-  }
+
+  return projectName
+
 }

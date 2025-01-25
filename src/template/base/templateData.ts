@@ -6,8 +6,8 @@ export const templateList: TemplateList[] = [
     title: `uni-plus-base${green('(base 项目)')}`,
     branch: 'base',
     url: {
-      gitee: 'https://gitee.com/uni-run/unibest-hbx.git',
-      github: 'https://github.com/uni-run/unibest-hbx.git',
+      gitee: 'https://gitee.com/FOM/uni-plus.git',
+      github: 'https://github.com/Jackie-Lin/uni-plus',
     },
     description: `${red('(base 项目)')}`
   },
@@ -15,8 +15,8 @@ export const templateList: TemplateList[] = [
     title: `uni-plus-demo${green('(demo 项目)')}`,
     branch: 'demo',
     url: {
-      gitee: 'https://gitee.com/uni-run/unibest-hbx.git',
-      github: 'https://github.com/uni-run/unibest-hbx.git',
+      gitee: 'https://gitee.com/FOM/uni-plus.git',
+      github: 'https://github.com/Jackie-Lin/uni-plus',
     }, // 模板地址
     description: `${red('(demo 项目)')}`
   }

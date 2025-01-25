@@ -1,75 +1,34 @@
-import { exec } from 'node:child_process'
-import { promises as fs } from 'node:fs'
-import { join } from 'node:path'
-import process from 'node:process'
-import { bold, red } from 'kolorist'
-import type { BaseTemplateList } from '../template/base/type'
-import type { Ora } from './loading'
-import { replaceProjectName } from './setPackageName'
+import { Spinner } from 'cli-spinner'
+import gitClone from 'git-clone/promise'
+import { greenBright } from 'colorette'
+import { templateList } from '../template/base/templateData'
+import { readJson, remove, writeJSON } from 'fs-extra'
+import { join } from 'pathe'
+import type { TemplateList } from '../template/base/type'
 
-async function removeGitFolder(localPath: string): Promise<void> {
-  const gitFolderPath = join(localPath, '.git')
-  await fs.rm(gitFolderPath, { recursive: true, force: true })
-}
+// 下载模板
+export const coloneRep = async (projectName: string, templateName: string) => {
+  const targetDir = join(process.cwd(), projectName)
+  const templateData = templateList.find(v => v.title === templateName) as TemplateList
 
-async function cloneRepo(gitUrls: string[], branch: string, localPath: string): Promise<void> {
-  let lastError = null
+  const repoUrl = templateData.url.gitee
+  const branchName = templateData.branch
 
-  for (const gitUrl of gitUrls) {
-    try {
-      await new Promise<void>((resolve, reject) => {
-        const execStr = `git clone -b ${branch} ${gitUrl} ${localPath}`
-        // const execStr = `npx degit codercup/unibest#${branch}`
-        // console.log(`${green('execStr:')} ${execStr}`)
+  const spinner = new Spinner('正在下载中... %s')
+  spinner.setSpinnerString('|/-\\')
+  spinner.start()
 
-        exec(execStr, async (error) => {
-          if (error) {
-            console.error(`${red('exec error:')} ${error}`)
-            reject(error)
-            return
-          }
+  await gitClone(repoUrl, projectName, { checkout: branchName })
 
-          try {
-            // console.log(`${green('removeGitFolder')} ${localPath}`)
-            await removeGitFolder(localPath)
-            resolve()
-          }
-          catch (error) {
-            // console.error(`${red('removeGitFolder error:')} ${error}`)
-            reject(error)
-          }
-        })
-      })
-      return
-    }
-    catch (error) {
-      console.error(`${red('cloneRepo error:')} ${error}`)
-      lastError = error
-    }
-  }
+  await remove(join(targetDir, '.git'))
 
-  if (lastError)
-    throw new Error('All URLs failed')
-}
+  const packageJson = await readJson(join(targetDir, 'package.json'))
+  packageJson.name = projectName
 
-function getRepoUrlList(url: BaseTemplateList['value']['url']) {
-  const { github, gitee } = url
-  return [gitee, github].filter(Boolean) as string[]
-}
+  await writeJSON(join(targetDir, 'package.json'), packageJson, { spaces: 2 })
 
-export async function downloadTemplate(data: BaseTemplateList['value'], name: string, root: string, loading: Ora) {
-  const repoUrlList = getRepoUrlList(data.url)
-  // console.log(`${green('获取到的仓库url:')} ${repoUrlList}`)
+  spinner.stop(true)
 
-  try {
-    // 如果填了branch则用对应的branch，否则使用 base， base 分支才是开发最需要的
-    await cloneRepo(repoUrlList, data.branch || 'base', root)
-  }
-  catch (error) {
-    loading.fail(`${bold('模板创建失败！')}`)
-    process.exit(1)
-  }
-
-  replaceProjectName(root, name)
-  data.callBack?.(root)
+  console.log();
+  console.log(greenBright('模板下载完成'))
 }

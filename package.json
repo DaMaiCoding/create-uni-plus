@@ -1,6 +1,6 @@
 {
   "name": "@uni-plus/create",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "scripts": {
     "build": "node ./scripts/build.js",
     "dev": "node ./src/cli/index.cjs"
