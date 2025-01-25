@@ -6,14 +6,13 @@
     "dev": "node ./src/cli/index.cjs"
   },
   "type": "module",
+  "private": true,
   "keywords": [],
-  "bin": {
-    "uni-plus": "src/cli/outfile.cjs"
-  },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@changesets/cli": "^2.27.12",
     "@inquirer/prompts": "^7.2.3",
     "@types/cli-spinner": "^0.2.3",
     "@types/ejs": "^3.1.5",
@@ -30,6 +29,8 @@
     "esbuild": "^0.24.2",
     "kolorist": "^1.8.0",
     "minimist": "^1.2.8",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-packagejson": "^2.5.8",
     "prompts": "^2.4.2",
     "typescript": "^5.7.3"
   },

@@ -8,7 +8,7 @@ export const getCommand = async () => {
     .name('uni-plus')
     .description('脚手架 uni-plus')
 
-  const opts = program.command('create')
+  const opts = program
     .description('创建项目')
     .option('-n, --name <name>', '项目名称')
     .opts()

@@ -1,8 +1,13 @@
 {
-  "name": "@uni-plus/create",
+  "name": "create-uni-plus",
   "version": "0.0.1",
   "main": "index.js",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "create-uni-plus": "index.cjs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
