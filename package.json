@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "scripts": {
     "build": "node ./scripts/build.js",
-    "dev": "node ./src/cli/index.cjs"
+    "dev": "node ./packages/cli/index.cjs"
   },
   "type": "module",
   "private": true,
