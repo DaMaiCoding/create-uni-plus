@@ -73,7 +73,7 @@ ${w}${F}${q}${nc.default.cursorHide}`});var et=W(y0(),1);var Kf=t=>!((0,et.pathE
   \\/_____/   \\/_/ \\/_/   \\/_/   \\/_/     \\/_____/   \\/_____/   \\/_____/
 `,i=`
   \u4F5C\u8005: \u5927\u9EA6\u5927\u9EA6
-  \u6587\u6863: https://jackie-lin.github.io/uni-lin-doc
+  \u6587\u6863: https://jackie-lin.github.io/uni-plus-doc
   \u6398\u91D1: https://juejin.cn/user/2368772393149325
   gitee: https://gitee.com/FOM/uni-plus.git
   github: https://github.com/Jackie-Lin/uni-plus

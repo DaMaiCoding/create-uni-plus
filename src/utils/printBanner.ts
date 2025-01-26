@@ -16,7 +16,7 @@ export const printBanner = (projectName: string) => {
 `
   const info = `
   作者: 大麦大麦
-  文档: https://jackie-lin.github.io/uni-lin-doc
+  文档: https://jackie-lin.github.io/uni-plus-doc
   掘金: https://juejin.cn/user/2368772393149325
   gitee: https://gitee.com/FOM/uni-plus.git
   github: https://github.com/Jackie-Lin/uni-plus
