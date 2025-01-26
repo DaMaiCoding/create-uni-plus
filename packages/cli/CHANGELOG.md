@@ -1,5 +1,11 @@
 # create-uni-plus
 
+## 0.0.5
+
+### Patch Changes
+
+- 🦄 refactor: 去掉一些没用到的依赖
+
 ## 0.0.4
 
 ### Patch Changes
