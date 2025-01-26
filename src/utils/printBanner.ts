@@ -1,12 +1,7 @@
-import process from 'node:process'
-import { lightCyan, green, bold } from 'kolorist'
-import fse from 'fs-extra';
-import path from 'node:path';
+import { lightCyan, green } from 'kolorist'
 
 /* 打印 banner */
 export const printBanner = () => {
-  const pkgJson = fse.readJSONSync(path.join(process.cwd(), 'package.json'));
-  const version = pkgJson.version;
   const figLet = ` __  __     __   __     __     ______   __         __  __     ______
 /\\ \\/\\ \\   /\\ "-.\\ \\   /\\ \\   /\\  == \\ /\\ \\       /\\ \\/\\ \\   /\\  ___\\
 \\ \\ \\_\\ \\  \\ \\ \\-.  \\  \\ \\ \\  \\ \\  _-/ \\ \\ \\____  \\ \\ \\_\\ \\  \\ \\___  \\
@@ -19,7 +14,6 @@ export const printBanner = () => {
   掘金: https://juejin.cn/user/2368772393149325
   gitee: https://gitee.com/FOM/uni-plus.git
   github: https://github.com/Jackie-Lin/uni-plus
-  version: @v${version}
   `
   console.log('------------------------------------------------------------------------');
   console.log(lightCyan(green(figLet)));
