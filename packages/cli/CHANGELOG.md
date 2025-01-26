@@ -1,5 +1,11 @@
 # create-uni-plus
 
+## 0.0.6
+
+### Patch Changes
+
+- ✨ feat: 更新文档链接
+
 ## 0.0.5
 
 ### Patch Changes
