@@ -22,7 +22,6 @@
     "@types/prompts": "^2.4.9",
     "colorette": "^2.0.20",
     "commander": "^13.1.0",
-    "consola": "^3.4.0",
     "esbuild": "^0.24.2",
     "kolorist": "^1.8.0",
     "prettier-plugin-organize-imports": "^4.1.0",
