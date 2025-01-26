@@ -1,5 +1,11 @@
 # create-uni-plus
 
+## 0.0.7
+
+### Patch Changes
+
+- 🦄 refactor: 去掉无用的类型声明
+
 ## 0.0.6
 
 ### Patch Changes
