@@ -2,23 +2,28 @@
   "name": "create-uni-plus",
   "version": "0.0.2",
   "main": "index.js",
+  "packageManager": "pnpm@9.15.2",
+  "type": "module",
   "publishConfig": {
     "access": "public"
   },
+  "author": "大麦大麦 <1351123861@qq.com>",
+  "license": "MIT",
+  "description": "An easy way to quickly build the uniapp project",
   "bin": {
     "create-uni-plus": "index.cjs"
   },
+  "files": [
+    "index.cjs"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.cjs"
   },
-  "homepage": "https://github.com/codercup/create-unibest#readme",
+  "homepage": "https://github.com/Jackie-Lin/create-uni-plus",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codercup/create-unibest.git"
+    "url": "git+https://github.com/Jackie-Lin/create-uni-plus.git"
   },
-  "bugs": "https://github.com/codercup/create-unibest/issues",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "bugs": "https://github.com/Jackie-Lin/create-uni-plus/issues",
+  "keywords": []
 }
