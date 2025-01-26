@@ -1,6 +1,6 @@
 {
   "name": "create-uni-plus",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "index.js",
   "packageManager": "pnpm@9.15.2",
   "type": "module",
