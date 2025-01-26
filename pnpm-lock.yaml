@@ -30,9 +30,6 @@ importers:
       '@types/cli-spinner':
         specifier: ^0.2.3
         version: 0.2.3
-      '@types/ejs':
-        specifier: ^3.1.5
-        version: 3.1.5
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
@@ -42,9 +39,6 @@ importers:
       '@types/inquirer':
         specifier: ^9.0.7
         version: 9.0.7
-      '@types/minimist':
-        specifier: ^1.2.5
-        version: 1.2.5
       '@types/node':
         specifier: ^22.10.10
         version: 22.10.10
@@ -394,9 +388,6 @@ packages:
   '@types/cli-spinner@0.2.3':
     resolution: {integrity: sha512-TMO6mWltW0lCu1de8DMRq9+59OP/tEjghS+rs8ZEQ2EgYP5yV3bGw0tS14TMyJGqFaoVChNvhkVzv9RC1UgX+w==}
 
-  '@types/ejs@3.1.5':
-    resolution: {integrity: sha512-nv+GSx77ZtXiJzwKdsASqi+YQ5Z7vwHsTP0JY2SiQgjGckkBRKZnk8nIM+7oUZ1VCtuTz0+By4qVR7fqzp/Dfg==}
-
   '@types/fs-extra@11.0.4':
     resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
 
@@ -408,9 +399,6 @@ packages:
 
   '@types/jsonfile@6.1.4':
     resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
-
-  '@types/minimist@1.2.5':
-    resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
 
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
@@ -1245,8 +1233,6 @@ snapshots:
     dependencies:
       '@types/node': 22.10.10
 
-  '@types/ejs@3.1.5': {}
-
   '@types/fs-extra@11.0.4':
     dependencies:
       '@types/jsonfile': 6.1.4
@@ -1262,8 +1248,6 @@ snapshots:
   '@types/jsonfile@6.1.4':
     dependencies:
       '@types/node': 22.10.10
-
-  '@types/minimist@1.2.5': {}
 
   '@types/node@12.20.55': {}
 
