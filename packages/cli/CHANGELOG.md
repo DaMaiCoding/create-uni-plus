@@ -1,5 +1,11 @@
 # create-uni-plus
 
+## 1.0.1
+
+### Patch Changes
+
+- docs: 修改 README.md 的使用部分
+
 ## 1.0.0
 
 ### Minor Changes
