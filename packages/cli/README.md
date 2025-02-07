@@ -46,5 +46,5 @@ pnpm create uni-plus my-project
 pnpm create uni-plus --help
 
 # 设置文件名
-pnpm create uni-plus my-project --name my-project
+pnpm create uni-plus --name my-project
 ```
