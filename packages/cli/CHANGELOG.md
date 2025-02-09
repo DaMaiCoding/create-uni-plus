@@ -1,5 +1,11 @@
 # create-uni-plus
 
+## 1.0.4
+
+### Patch Changes
+
+- 更新 一下 cli 的 README
+
 ## 1.0.3
 
 ### Patch Changes
