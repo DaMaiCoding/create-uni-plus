@@ -4,10 +4,10 @@
 
 ## 🔗 相关链接
 
-- [📘 uniPlus 使用文档](https://jackie-lin.github.io/uni-plus-doc/)
-- [💻 create-uni-plus GitHub 仓库](https://github.com/Jackie-Lin/create-uni-plus)
+- [📘 uniPlus 使用文档](https://damaicoding.github.io/uni-plus-doc/)
+- [💻 create-uni-plus GitHub 仓库](https://github.com/damaicoding/create-uni-plus)
 - [🚀 create-uni-plus Gitee 仓库](https://gitee.com/FOM/create-uni-plus)
-- [🐛 create-uni-plus 问题反馈](https://github.com/Jackie-Lin/create-uni-plus/issues)
+- [🐛 create-uni-plus 问题反馈](https://github.com/damaicoding/create-uni-plus/issues)
 
 ## 🌼 简介
 
@@ -41,6 +41,8 @@
 ```bash
 # 直接创建项目，项目名为 my-project
 pnpm create uni-plus my-project
+# 【注意】如果无法创建项目，可以是有缓存，可以加上 `@latest` 
+pnpm create uni-plus@latest my-project
 
 # 查看帮助
 pnpm create uni-plus --help
