@@ -1,5 +1,11 @@
 # create-uni-plus
 
+## 1.0.6
+
+### Patch Changes
+
+- 优化 请求提示
+
 ## 1.0.5
 
 ### Patch Changes
