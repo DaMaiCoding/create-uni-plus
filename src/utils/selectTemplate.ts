@@ -7,8 +7,8 @@ export const selectTemplate = async () => {
     message: '请选择项目模版',
     choices: templateList.map((item) => {
       return {
-        name: item.title,
-        value: item.title,
+        name: item.defaultProjectName + item.extra,
+        value: item.defaultProjectName,
       }
     }),
   });

@@ -1,8 +1,9 @@
 import { Command } from 'commander';
 import { input } from '@inquirer/prompts';
 
-export const getCommand = async () => {
+export const getCommand = async (templateName?: string) => {
   const program = new Command();
+  const defaultTemplateName = templateName || 'my-project';
   // 获取命令行的参数, 根据参数执行不同的逻辑
 
   const opts = program
@@ -19,7 +20,7 @@ export const getCommand = async () => {
 
   // 如果命令行没有项目名，就输入项目名称
   while (!projectName) {
-    projectName = await input({ message: '请输入项目名', default: 'uni-plus' });
+    projectName = await input({ message: '请输入项目名', default: defaultTemplateName });
   }
 
   return projectName

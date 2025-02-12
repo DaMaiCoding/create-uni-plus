@@ -5,7 +5,7 @@ import type { TemplateList } from '../template/base/type'
 
 /* 打印完成提示 */
 export const printFinish = (projectName: string, templateName: string) => {
-  const templateData = templateList.find(v => v.title === templateName) as TemplateList
+  const templateData = templateList.find(v => v.defaultProjectName === templateName) as TemplateList
   const runCode = templateData.runCode
 
   console.log(

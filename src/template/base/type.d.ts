@@ -6,7 +6,8 @@ interface GithubGitee {
 }
 
 interface BaseTemplateList {
-  title: string // 模板名称
+  defaultProjectName: string // 模板名称
+  extra: string // 模板额外信息
   branch: string // 模板分支
   url: GithubGitee // 模板地址
   runCode: string // 运行命令

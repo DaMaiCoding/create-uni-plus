@@ -9,7 +9,7 @@ import type { TemplateList } from '../template/base/type'
 // 下载模板
 export const coloneRep = async (projectName: string, templateName: string) => {
   const targetDir = join(process.cwd(), projectName)
-  const templateData = templateList.find(v => v.title === templateName) as TemplateList
+  const templateData = templateList.find(v => v.defaultProjectName === templateName) as TemplateList
 
   const repoUrl = templateData.url.gitee
   const branchName = templateData.branch

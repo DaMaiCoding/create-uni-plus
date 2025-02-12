@@ -19,13 +19,13 @@
 
 ## 📦 选择类型
 
-### `uni-plus-base`(base 项目)
+### `uni-plus-base`(基础模板)
 
 所有的衍生项目都基于 `base` 项目，推荐使用 `base` 项目，因为 `base` 项目没有太多功能，只是基础配置。
 
 如果你需要的功能很多，推荐你直接去修改 `demo` 项目
 
-### `uni-plus-demo`(demo 项目)
+### `uni-plus-demo`(DEMO项目)
 
 这个项目包括了
 
@@ -35,6 +35,18 @@
 - `Layout` 布局案例
 - 请求使用案例（包括分页、下拉更新、上拉加载更多）
 - ...
+
+### `uni-plus-mock`(MOCK项目)
+
+这个项目主要是为 `uni-plus-demo` 中请求案例提供 `mock` 数据
+
+你可以直接使用，也可以根据你的需求修改
+
+下载之后，执行 `pnpm i` `pnpm start:dev`（默认运行在 `3000` 端口）
+
+`uni-plus-demo` 中已经配置了默认的 `mock` 请求地址
+
+所以你只需要在也启动 `uni-plus-demo` 即可访问 `mock` 数据
 
 ## 🛠️ 使用
 
