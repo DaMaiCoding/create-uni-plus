@@ -1,6 +1,6 @@
 # ✨ create-uni-plus
 
-![Npm 版本](https://img.shields.io/badge/uniplus-cli_v0.0.8-green)
+![uni-plus版本](https://img.shields.io/badge/uniplus-cli_v1.0.7-green)
 
 ## 🔗 相关链接
 

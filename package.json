@@ -1,8 +1,8 @@
 {
   "name": "create-uni-plus",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "scripts": {
-    "build": "node ./scripts/build.js",
+    "build": "node ./scripts/build.js && node ./scripts/copy.mjs",
     "dev": "node ./packages/cli/index.cjs"
   },
   "type": "module",
