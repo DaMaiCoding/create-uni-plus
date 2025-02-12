@@ -1,5 +1,11 @@
 # create-uni-plus
 
+## 1.0.5
+
+### Patch Changes
+
+- 增加 mock 下载
+
 ## 1.0.4
 
 ### Patch Changes
