@@ -1,5 +1,11 @@
 # create-uni-plus
 
+## 1.0.7
+
+### Patch Changes
+
+- 增加 cli README.md 同步
+
 ## 1.0.6
 
 ### Patch Changes
