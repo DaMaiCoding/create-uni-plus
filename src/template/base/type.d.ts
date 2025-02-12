@@ -9,7 +9,7 @@ interface BaseTemplateList {
   title: string // 模板名称
   branch: string // 模板分支
   url: GithubGitee // 模板地址
-  description: string // 模板描述
+  runCode: string // 运行命令
 }
 
 export type TemplateList = BaseTemplateList

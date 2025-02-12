@@ -9,7 +9,7 @@ export const templateList: TemplateList[] = [
       gitee: 'https://gitee.com/DaMaiCoding/uni-plus.git',
       github: 'https://github.com/DaMaiCoding/uni-plus.git',
     },
-    description: `${red('(base 项目)')}`
+    runCode: 'pnpm dev:h5'
   },
   {
     title: `uni-plus-demo${green('(demo 项目)')}`,
@@ -18,6 +18,15 @@ export const templateList: TemplateList[] = [
       gitee: 'https://gitee.com/DaMaiCoding/uni-plus.git',
       github: 'https://github.com/DaMaiCoding/uni-plus.git',
     }, // 模板地址
-    description: `${red('(demo 项目)')}`
+    runCode: 'pnpm dev:h5'
+  },
+  {
+    title: `uni-plus-mock${green('(mock 项目)')}`,
+    branch: 'master',
+    url: {
+      gitee: 'https://gitee.com/DaMaiCoding/uni-plus-mock.git',
+      github: 'https://github.com/DaMaiCoding/uni-plus-mock.git',
+    }, // 模板地址
+    runCode: 'pnpm start:dev'
   }
 ]

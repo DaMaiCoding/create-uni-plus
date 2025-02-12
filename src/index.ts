@@ -14,7 +14,7 @@ const init = async () => {
   // 5. 打印 uni-plus Banner
   await printBanner(projectName)
   // 6. 打印完成提示
-  await printFinish(projectName)
+  await printFinish(projectName, templateName)
 }
 
 init()
